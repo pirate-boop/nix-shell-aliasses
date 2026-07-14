@@ -4,7 +4,7 @@ let
   # Импортируем отдельные модули, передавая им системный pkgs
   rebuild-wiz = import ./rebuild.nix { inherit pkgs; };
   git-wiz = import ./git-pull.nix { inherit pkgs; };
-  perms-wiz = import ./restore-perms.nix { inherit pkgs; };
+  #perms-wiz = import ./restore-perms.nix { inherit pkgs; };
 
   # Сам крутильщик меню (просто запускает уже собранные бинарники)
   kori-menu = pkgs.writeShellScriptBin "kori" ''
